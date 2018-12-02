@@ -1,0 +1,47 @@
+
+body{
+	
+}
+#chitiet{
+
+	margin:0 auto;
+	width: 1200px;
+}
+#chitiet >div >div{
+	margin-top:20px;
+	margin-left:30px;
+}
+#giohang{
+	text-decoration: none;
+	font-size: 30px;
+	border:solid 1px #ddd;
+	margin-top:20px;
+	border-radius:5px;
+	background:-webkit-linear-gradient(top, #f59000, #fd6e1d);
+    background-image: -webkit-linear-gradient(top, rgb(245, 144, 0), rgb(253, 110, 29));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    color:white;
+    overflow: hidden;
+}
+#thongtin a{
+	text-decoration: none;
+	color:red;
+	text-align: center;
+}
+#thongtin {
+	padding: 20px;
+}
+#chitiet div img{
+	width:395px;
+	height:540px;
+	border-radius: 5px;
+	border:solid 1px #ddd;
+}

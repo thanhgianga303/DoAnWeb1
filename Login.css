@@ -1,0 +1,62 @@
+@charset "utf-8";
+.container{
+	width:500px;
+	height:400px;
+	text-align:center;
+	background:rgba(0, 0, 0,0.7);
+	border-radius: 100px;
+	margin:0 auto;
+	margin-top:150px;
+	position:relative;
+	transition:.7s;
+}
+.container img{
+	width: 120px;
+	height:120px;
+	margin-top:-60px;
+	margin-bottom:30px;
+}
+input[type="text"],input[type="password"]{
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	padding-left:40px;
+	border:none;
+	border-radius:30px;
+}
+input[type="text"]:focus{
+	box-shadow:0px 0px 100px blue;
+}
+input[type="password"]:focus{
+	box-shadow:0px 0px 100px blue;
+}
+.container i{
+	position:absolute;
+	left:0;
+	padding:10px 90px;
+	font-size:25px;
+	color:#aaa;
+	transition:.3s;
+}
+.container input[type="text"]:focus + i{
+	color:#000;
+}
+.sub{
+	padding:15px 30px;
+	color:#30F;
+	border-radius:30px;
+	border:none;
+	background-color:#000;
+}
+.sub:focus{
+	box-shadow:0px 0px 100px red;}
+.R{
+	padding:10px 25px;
+	color:#30F;
+	border-radius:250px;
+	border:none;
+	background:rgba(102, 0, 204,1);
+}
+.Dangky{
+	color:#6F6;}

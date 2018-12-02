@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="giohang.css">
+      <script type="text/javascript" src="javascript.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="giohang.js"></script>
+      <script>
+       window.onload = function() {
+         var d= new Date();
+         var n=d.getTime();
+         var stt;
+         var s=`<tr>
+               <td>STT</td>
+               <td>Sản phẩm</td>
+               <td>Giá</td>
+               <td>Thời Gian</td>
+               <td>Xóa</td>
+            </tr>`;
+         // var g="";
+         // console.log(localStorage.getItem("listSanPham"));
+         var l = JSON.parse(localStorage.getItem("listSanPham"));
+         for(var i=0 ; i < l.length; i++)
+            {
+               stt=i+1;
+               s = s+'<tr><td>'+stt+'</td><td>'+l[i].ten+'</td><td>'+l[i].gia+'</td><td>'+n+'</td><td><a href="giohang.html" onclick="xoaSanPham('+i+');" ><i class="fas fa-trash-alt"></i></a></td></tr>';
+            }
+            document.getElementById("sanpham").innerHTML = s;
+            // document.getElementById("giasp").innerHTML = g;
+       }
+    </script>
+</head>
+<body>
+<div class="clear">
+         <div id="header">
+            <div style="width: 600px;float: left;text-align: center;">
+               <div style="text-align: center;"><img src="img/logo.jpg"/></div>
+               <p style="font-size: 30px; color:black">THỜI TRANG CAO CẤP<p>
+            </div>
+            <!-- End Logo -->
+            <div style="width:auto;float: right">
+               <div style="margin-top:70px">
+                  <form>
+                     <input name="search" type="search" id="search_id" size="50px" autocomplete="off" />
+                     <!-- <a href="index.html?search=&0"> -->
+                     <input type="button" id="button" value="TÌM KIẾM SẢN PHẨM" onclick="change();" /></form>
+               </div>
+               <!-- End search -->
+               <div style="margin-top:10px;width:748px">
+                  <div style="float: left;width: 120px;color:#777">GIAO HÀNG TẬN NƠI</div>
+                  <div style="float: left;width: 120px;color:#777">LIÊN HỆ<br>(0375298096)</div>
+                  <div style="float: left;width: 130px;color:#777">ĐỔI HÀNG TRONG 5 NGÀY</div>
+                  <div style="float: left;width: 150px;margin-left:10px"><a href="LOGIN.html">ĐĂNG NHẬP</a></div>
+                  <div style="float: left;width: 150px"><a href="Dangky.html">ĐĂNG KÍ</a></div>
+               </div>
+               <!-- End thong tin -->
+            </div>
+         </div>
+         <!-- End header -->
+         <div style=" width: 1348px">
+            <hr/>
+         </div>
+         <div id="aside"></div>
+         <div style="width: 1348px">
+            <hr/>
+         </div>
+         <table style="border:solid 5px #ddd;width: 1000px;color:white;font-size:30px;margin: 0 auto;text-align: center" id="sanpham">
+         </table>
+
+
+
+
+	</body>

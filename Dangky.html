@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Untitled Document</title>
+      <style>
+         #Tieu{background-color:#;
+         text-align:center; font-size:25px; font-size:25px;}
+         tr,td{border:0}
+         #click div input{
+         color: #FF3300;
+         }
+      </style>
+      <script type="text/javascript" src="Account.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" href="Dangky.css" type="text/css" />
+   </head>
+   <body style="background-color: #f2f2f2">
+      <div align="center"  style="font-family: Comic Sans, Comic Sans MS, cursive;font-size: 30px;color:black;position: relative;"><b>ĐĂNG KÝ TÀI KHOẢN NGƯỜI DÙNG</b></div>
+      <form name="Main" action="#" onsubmit="return Dieukien()"method="post">
+         <div class="FORM">
+            <div  style="height:25px">
+               <div style="float:left;width:40%; text-align:right">Tên đăng nhập:</div>
+               <div style="float:right; width:60%"><input type="text" name="Acc" id="username" placeholder="Tên đăng nhập"/></div>
+            </div>
+            <div style="height:25px">
+               <div style="float:left;width:40%; text-align:right">Mật khẩu:</div>
+               <div style="float:right; width:60%"><input name="Pass" id="password" type="password" placeholder="Nhập mật khẩu" id="password"/></div>
+            </div>
+            <div  style="height:25px">
+               <div style="float:left;width:40%; text-align:right">Họ:</div>
+               <div style="float:right; width:60%"><input type="text" name="LastName" id="fullname" placeholder="Nhập họ"/></div>
+            </div>
+            <div  style="height:25px">
+               <div style="float:left;width:40%; text-align:right">Tên:</div>
+               <div style="float:right; width:60%"><input type="text" name="Firstname" id="firstname" placeholder="Nhập tên"/></div>
+            </div>
+            <div  style="height:25px">
+               <div style="float:left; width:40%; text-align:right">Số điện thoại:</div>
+               <div style="float:right; width:60%; text-align:left">    <input type="text" name="Phone" placeholder="Nhập số điện thoại" />    </div>
+               <div style="height:25px"></div>
+               <div style="float:left; width:40%; text-align:right">Email:</div>
+               <div style="float:right; width:60%; text-align:left">    <input type="text" name="Email" id="email" placeholder="Nhập Email"/>    </div>
+               <div style="height:25px"></div>
+               <div style="float:left; width:40%; text-align:right"></div>
+            </div>
+            <div style="float:right; width:60%; text-align:left">        </div>
+            <div style="margin-top:80px;">
+               <hr >
+               </hr> 
+            </div>
+            <div style="height:25px;text-align: center">
+               <select name="Phuongthuc" id="pttt" onchange="Checkbox(this)">
+                  <option value=" ">Chọn phương thức thanh toán</option>
+                  <option value="noi_dia">Thẻ nội địa</option>
+                  <option value="quoc_te">Thẻ quốc tế</option>
+               </select>
+            </div>
+            <div id="PT"></div>
+            <div style="margin-top:1px">
+               <hr />
+               </hr>
+            </div>
+            <div style="height:25px">
+               <div style="float:left;width:50%; text-align:right;">
+                  <input  class="sub" type="submit" name="Send" value="Đăng ký" style="color:#FF3300;" onclick="luuThongTin(form);" />
+               </div>
+               <div style="float:right; width:50%">    <input class="sub" type="reset" name="Del" value="Xóa" style="color:#FF3300" />    </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>
